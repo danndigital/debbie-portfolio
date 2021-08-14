@@ -66,7 +66,7 @@ function WeatherApp() {
             </div>
           </div>
         </section>
-        <section className="space-y-4 lg:w-8/12">
+        <section className="space-y-4 m-0 pt-6 lg:pt-0 lg:w-8/12">
           <p className="text-teal-800">
             For the SheCodes React Workshop, we went through the process of
             creating a Weather App. It started with the design and creating a

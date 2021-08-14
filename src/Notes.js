@@ -62,7 +62,7 @@ function Notes() {
             </div>
           </div>
         </section>
-        <section className="lg:w-8/12 space-y-4 text-teal-800">
+        <section className="lg:w-8/12 m-0 pt-6 lg:pt-0 space-y-4 text-teal-800">
           <p>
             I wanted to create an CRUD project that would allow me to track my
             notes from #100DaysOfCode challenge on Twitter. I followed a{" "}
@@ -117,9 +117,7 @@ function Notes() {
           <ul className="list-disc list-inside pl-6 ">
             <li>Save information to a database.</li>
             <li>Ability to login.</li>
-            <li>
-              Pin notes to the top or mark as favourite.
-            </li>
+            <li>Pin notes to the top or mark as favourite.</li>
           </ul>
 
           <p className=" text-teal-800">
