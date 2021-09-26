@@ -66,10 +66,10 @@ function Home() {
               shadow-lg
               hover:shadow-2xl
               bg-gradient-to-br
-              from-orange-300
-              to-orange-400
-              hover:from-orange-400 hover:to-orange-300
-              text-teal-800
+               from-teal-600
+              to-teal-800
+              hover:from-teal-800 hover:to-teal-600
+              text-teal-50
               font-bold
               text-lg
               tracking-wide
