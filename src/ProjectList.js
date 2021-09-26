@@ -6,7 +6,7 @@ const project = [
   {
     name: "Notes App",
     thumbnail: "./media/notes.png",
-    copy: "A CRUD application to store and edit notes.",
+    copy: "A CRUD application to store and edit notes using React and TailwindCSS.",
     caseStudy: "/Notes",
     link: "https://awesome-lamport-4fcaff.netlify.app/",
     github: "https://github.com/hellodeborahuk/coding-notebook",
@@ -14,7 +14,7 @@ const project = [
   {
     name: "React Weather App",
     thumbnail: "./media/react-weather.png",
-    copy: "A weather app built with ReactJS and API intergration for my SheCodes Workshop project.",
+    copy: "A weather app built with React and API intergration for my SheCodes Workshop project.",
     caseStudy: "/WeatherApp",
     link: "https://ecstatic-swartz-7b404c.netlify.app/",
     github: "https://github.com/hellodeborahuk/react-weather-app",
