@@ -93,7 +93,7 @@ function App() {
             {/* MOBILE MENU */}
             <div
               className="mobile-menu p-6 hidden md:hidden"
-              className={`"mobile-menu" ${isActive ? null : "hidden"}`}
+              className={`mobile-menu ${isActive ? null : "hidden"}`}
             >
               <div className="px-6">
               <Link
