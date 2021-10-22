@@ -95,7 +95,7 @@ function App() {
                 isActive ? "" : "hidden"
               }`}
             >
-              <div className="flex justify-center mb-6 space-x-6">
+              <div className="flex justify-center space-x-6">
                 <Link
                   to="/"
                   className="inline-block  hover:text-gray-900 hover-underline-animation"
@@ -172,7 +172,7 @@ function App() {
         </div>
       </Router>
     </div>
-  );
-}
+    );
+  }
 
-export default App;
+  export default App;
