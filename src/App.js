@@ -11,7 +11,6 @@ import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const [isActive, setActive] = useState(false);
-
   const toggleMenu = () => {
     setActive(!isActive);
   };
@@ -74,16 +73,16 @@ function App() {
               <div className="md:hidden flex">
                 <button className="mobile-menu-button" onClick={toggleMenu}>
                   <svg
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M4 6h16M4 12h16M4 18h16"
                     />
                   </svg>
@@ -92,28 +91,29 @@ function App() {
             </div>
             {/* MOBILE MENU */}
             <div
-              className="mobile-menu p-6 hidden md:hidden"
-              className={`mobile-menu ${isActive ? null : "hidden"}`}
+              className={`mobile-menu p-6 md:hidden ${
+                isActive ? "" : "hidden"
+              }`}
             >
               <div className="px-6">
-              <Link
-                to="/"
-                className="inline-block mr-4 hover:text-gray-900 hover-underline-animation"
-              >
-                Home
-              </Link>
-              <Link
-                to="/projects"
-                className="inline-block mr-4 hover:text-gray-900 hover-underline-animation"
-              >
-                Projects
-              </Link>
-              <Link
-                to="/contact"
-                className="inline-block hover:text-gray-900 hover-underline-animation"
-              >
-                Contact
-              </Link>
+                <Link
+                  to="/"
+                  className="inline-block mr-4 hover:text-gray-900 hover-underline-animation"
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/projects"
+                  className="inline-block mr-4 hover:text-gray-900 hover-underline-animation"
+                >
+                  Projects
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-block hover:text-gray-900 hover-underline-animation"
+                >
+                  Contact
+                </Link>
               </div>
             </div>
           </nav>
