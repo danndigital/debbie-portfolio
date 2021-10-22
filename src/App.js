@@ -91,20 +91,20 @@ function App() {
             </div>
             {/* MOBILE MENU */}
             <div
-              className={`mobile-menu p-6 md:hidden ${
+              className={`mobile-menu md:hidden ${
                 isActive ? "" : "hidden"
               }`}
             >
-              <div className="px-6">
+              <div className="flex justify-center mb-6 space-x-6">
                 <Link
                   to="/"
-                  className="inline-block mr-4 hover:text-gray-900 hover-underline-animation"
+                  className="inline-block  hover:text-gray-900 hover-underline-animation"
                 >
                   Home
                 </Link>
                 <Link
                   to="/projects"
-                  className="inline-block mr-4 hover:text-gray-900 hover-underline-animation"
+                  className="inline-block hover:text-gray-900 hover-underline-animation"
                 >
                   Projects
                 </Link>
