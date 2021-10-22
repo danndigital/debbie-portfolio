@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useState } from "react";
 import Home from "./Home";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -9,6 +10,12 @@ import "./App.css";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
+  const [isActive, setActive] = useState(false);
+
+  const toggleMenu = () => {
+    setActive(!isActive);
+  };
+
   return (
     <div className="App">
       <Router>
@@ -16,7 +23,7 @@ function App() {
         {/* NAVIGATION */}
         <div className="bg-gradient-to-br from-teal-50 to-teal-100">
           <nav className="text-gray-600">
-            <div className="container mx-auto lg:flex lg:justify-between px-6 lg-px-0 py-6">
+            <div className="container mx-auto flex justify-between px-6 lg-px-0 py-6">
               {/* LEFT HEADER */}
               <div className="flex items-center space-x-4">
                 <Link
@@ -28,7 +35,7 @@ function App() {
               </div>
 
               {/* RIGHT HEADER */}
-              <div className="flex items-center space-x-6">
+              <div className="hidden md:flex items-center space-x-6">
                 <Link
                   to="/"
                   className="inline-block  hover:text-gray-900 hover-underline-animation"
@@ -61,6 +68,52 @@ function App() {
                 >
                   Contact
                 </Link>
+              </div>
+
+              {/* MOBILE BUTTON */}
+              <div className="md:hidden flex">
+                <button className="mobile-menu-button" onClick={toggleMenu}>
+                  <svg
+                    class="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            {/* MOBILE MENU */}
+            <div
+              className="mobile-menu p-6 hidden md:hidden"
+              className={`"mobile-menu" ${isActive ? null : "hidden"}`}
+            >
+              <div className="px-6">
+              <Link
+                to="/"
+                className="inline-block mr-4 hover:text-gray-900 hover-underline-animation"
+              >
+                Home
+              </Link>
+              <Link
+                to="/projects"
+                className="inline-block mr-4 hover:text-gray-900 hover-underline-animation"
+              >
+                Projects
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-block hover:text-gray-900 hover-underline-animation"
+              >
+                Contact
+              </Link>
               </div>
             </div>
           </nav>
