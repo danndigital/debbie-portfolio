@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import WeatherApp from "./WeatherApp";
 import Notes from "./Notes";
 import Dosha from "./Dosha";
+import LinkPage from "./LinkPage";
 import "./App.css";
 import ScrollToTop from "./ScrollToTop";
 
@@ -134,6 +135,9 @@ function App() {
             <Route path="/notes">
               <Notes />
             </Route>
+            <Route path="/linkpage">
+              <LinkPage />
+              </Route>
             <Route path="/">
               <Home />
             </Route>
