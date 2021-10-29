@@ -19,7 +19,7 @@ const links = [
 
 function LinkPage() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center mb-8">
       <div className="p-6">
         <img
           src="/media/debbie.jpg"
