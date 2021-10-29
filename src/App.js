@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App min-h-screen">
       <Router>
         <ScrollToTop />
         {/* NAVIGATION */}
@@ -92,9 +92,7 @@ function App() {
             </div>
             {/* MOBILE MENU */}
             <div
-              className={`mobile-menu md:hidden ${
-                isActive ? "" : "hidden"
-              }`}
+              className={`mobile-menu md:hidden ${isActive ? "" : "hidden"}`}
             >
               <div className="flex justify-center space-x-6">
                 <Link
@@ -137,7 +135,7 @@ function App() {
             </Route>
             <Route path="/linkpage">
               <LinkPage />
-              </Route>
+            </Route>
             <Route path="/">
               <Home />
             </Route>
@@ -176,7 +174,7 @@ function App() {
         </div>
       </Router>
     </div>
-    );
+  );
   }
 
   export default App;
