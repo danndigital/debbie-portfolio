@@ -1,3 +1,22 @@
+const links = [
+  {
+    url: "https://dann.digital/",
+    copy: "Check out my portfolio",
+  },
+  {
+    url: "https://debbiedanndigital.hashnode.dev/",
+    copy: "Read my blog on Hashnode",
+  },
+  {
+    url: "https://www.linkedin.com/in/debbiedann/",
+    copy: "Connect with me on LinkedIn",
+  },
+  {
+    url: "https://github.com/hellodeborahuk",
+    copy: "Find my work on GitHub",
+  },
+];
+
 function LinkPage() {
   return (
     <main className="flex flex-col items-center min-h-screen">
@@ -11,10 +30,12 @@ function LinkPage() {
       <h1 className="font-serif font-extrabold text-3xl lg:text-5xl mb-6 text-teal-600">
         Debbie Dann
       </h1>
-
-      <a
-        href="https://dann.digital/"
-        className="py-3
+      {links.map(function(links, index) {
+        return (
+          <a
+            key={index}
+            href={links.url}
+            className="py-3
               rounded
               shadow-lg
               hover:shadow-2xl
@@ -32,78 +53,13 @@ function LinkPage() {
              mb-6
              sm:w-2/5
              lg:w-1/4"
-      >
-        Check out my portfolio
-      </a>
-      <a
-        href="https://www.linkedin.com/in/debbiedann/"
-        className="py-3
-              rounded
-              shadow-lg
-              hover:shadow-2xl
-              bg-gradient-to-br
-              from-teal-600
-              to-teal-800
-              hover:from-teal-800 hover:to-teal-600
-              text-teal-50
-              text-center	
-              tracking-wide
-              font-bold
-              transition
-              duration-500
-             w-4/5
-             mb-6
-             sm:w-2/5
-             lg:w-1/4"
-      >
-        Connect with me on LinkedIn
-      </a>
-      <a
-        href="https://debbiedanndigital.hashnode.dev/"
-        className="py-3
-              rounded
-              shadow-lg
-              hover:shadow-2xl
-              bg-gradient-to-br
-              from-teal-600
-              to-teal-800
-              hover:from-teal-800 hover:to-teal-600
-              text-teal-50
-              text-center	
-              tracking-wide
-              font-bold
-              transition
-              duration-500
-             w-4/5
-             mb-6
-             sm:w-2/5
-             lg:w-1/4"
-      >
-        Read my blog on Hashnode
-      </a>
-      <a
-        href="https://github.com/hellodeborahuk"
-        className="py-3
-              rounded
-              shadow-lg
-              hover:shadow-2xl
-              bg-gradient-to-br
-              from-teal-600
-              to-teal-800
-              hover:from-teal-800 hover:to-teal-600
-              text-teal-50
-              text-center	
-              tracking-wide
-              font-bold
-              transition
-              duration-500
-             w-4/5
-             mb-6
-             sm:w-2/5
-             lg:w-1/4"
-      >
-          Find my work on GitHub
-      </a>
+          >
+            {links.copy}
+          </a>
+        );
+      })}
+      
+      
     </main>
   );
 }
