@@ -138,7 +138,7 @@ function Home() {
           grid-cols-2
           justify-evenly"
       >
-        <div className="py-12 bg-teal-600 ">
+        <div className="py-12 bg-teal-800 ">
           <div className=" container mx-auto grid justify-center justify-items-center">
             <h2 className=" font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-orange-50">
               Skills

@@ -115,6 +115,7 @@ function Project({ maxItems }) {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="link to live website"
                 >
                   <FaLink
                     className="transform
@@ -132,6 +133,7 @@ function Project({ maxItems }) {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="link to project on github"
                   >
                     <FaGithub
                       className="transform

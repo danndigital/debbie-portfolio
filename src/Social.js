@@ -11,6 +11,7 @@ function Social() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-6xl font-bold text-orange-400"
+          aria-label="Twitter"
         >
           <FaTwitter
             className="transform
@@ -24,6 +25,7 @@ function Social() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-6xl font-bold text-orange-400"
+          aria-label="GitHub"
         >
           <FaGithub
             className="transform
@@ -37,6 +39,7 @@ function Social() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-6xl font-bold text-orange-400"
+          aria-label="LinkedIn"
         >
           <FaLinkedinIn
             className="transform

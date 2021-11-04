@@ -72,7 +72,7 @@ function App() {
 
               {/* MOBILE BUTTON */}
               <div className="md:hidden flex">
-                <button className="mobile-menu-button" onClick={toggleMenu}>
+                <button className="mobile-menu-button" onClick={toggleMenu} aria-label="mobile-menu">
                   <svg
                     className="w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
