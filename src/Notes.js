@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa"
 import { Link } from "react-router-dom";
 
 function Notes() {
@@ -47,6 +48,20 @@ function Notes() {
               </p>
               <p className="text-3xl font-bold text-orange-400">
                 <a
+                  href="https://youtu.be/shE4uhX8QIk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube
+                    className="transform
+                transition
+                duration-500
+                hover:scale-110"
+                  />
+                </a>
+              </p>
+              <p className="text-3xl font-bold text-orange-400">
+                <a
                   href="https://github.com/hellodeborahuk/coding-notebook"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,7 +80,12 @@ function Notes() {
         <section className="lg:w-8/12 m-0 pt-6 lg:pt-0 space-y-4 text-teal-800">
           <p>
             I wanted to create an CRUD project that would allow me to track my
-            notes from #100DaysOfCode challenge on Twitter. I followed a{" "}
+            notes from #100DaysOfCode challenge on Twitter. If you'd rather hear
+            me walkthrough this project, watch the video below.
+          </p>
+          <p>
+            {" "}
+            I followed a{" "}
             <a
               href="https://www.youtube.com/watch?v=8KB3DHI-QbM"
               target="_blank"
@@ -78,11 +98,16 @@ function Notes() {
             was also a challenge when it came to searching within the two
             fields.
           </p>
-          <img
-            src="./media/notes.png"
-            alt="notes app"
-            className="m-auto lg:w-9/12"
-          />
+          <iframe
+            className="m-auto"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/shE4uhX8QIk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
           <h3 className="font-bold text-xl lg:text-2xl mb-3 text-teal-600">
             Stumbling blocks
           </h3>
