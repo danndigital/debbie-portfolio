@@ -46,7 +46,7 @@ const project = [
     thumbnail: "./media/dictionary.png",
     copy: "A dictionary built with React and API intergration for my SheCodes Workshop project.",
     link: "https://relaxed-stonebraker-528b23.netlify.app/",
-    github: "https://github.com/hellodeborahuk/dictionary",
+    github: "https://github.com/hellodeborahuk/dictionary-project",
   },
   {
     name: "Breathing Animation",
